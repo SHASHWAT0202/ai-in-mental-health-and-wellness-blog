@@ -637,11 +637,13 @@ header img {
 }
 
 .future-trends li::before {
-    content: '🚀';
+    content: '•';
     position: absolute;
     left: 1rem;
     top: 1rem;
     font-size: 1.2rem;
+    color: var(--primary-500);
+    font-weight: bold;
 }
 
 /* Conclusion Box */

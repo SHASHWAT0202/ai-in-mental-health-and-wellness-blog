@@ -368,6 +368,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    console.log('🧠 AI Mental Health Blog loaded successfully! 🚀');
+    console.log('🧠 AI Mental Health Blog loaded successfully! ✨');
     console.log('Built with ❤️ for mental wellness and AI innovation');
 });
