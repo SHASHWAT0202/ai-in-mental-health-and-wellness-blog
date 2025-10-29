@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://your-domain.vercel.app/sitemap.xml
+
+# Optimize crawling
+Crawl-delay: 1
+
+# Block access to admin or private files
+Disallow: /admin/
+Disallow: /private/
+Disallow: *.json$
+
+# Allow all CSS and JS files
+Allow: /css/
+Allow: /js/
+Allow: /assets/

@@ -1,0 +1,26 @@
+{
+  "name": "ai-mental-health-blog",
+  "version": "1.0.0",
+  "description": "Modern blog about AI in Mental Health & Wellness with beautiful animations and responsive design",
+  "main": "index.html",
+  "scripts": {
+    "dev": "serve .",
+    "build": "echo 'Static site - no build needed'",
+    "start": "serve ."
+  },
+  "keywords": [
+    "ai",
+    "mental health",
+    "wellness",
+    "blog",
+    "responsive",
+    "animations",
+    "tailwind",
+    "modern"
+  ],
+  "author": "AI Wellness Team",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.0.0"
+  }
+}
