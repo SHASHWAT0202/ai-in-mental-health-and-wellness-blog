@@ -1,784 +1,394 @@
-<!DOCTYPE html><!DOCTYPE html>
-
-<html lang="en"><html lang="en">
-
-<head><head>
-
-    <meta charset="UTF-8">    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>AI in Mental Health & Wellness</title>    <title>AI in Mental Health & Wellness</title>
-
-    <meta name="description" content="Exploring how AI is reshaping mental health and wellness, from chatbots to personalized treatment planning.">    <meta name="description" content="Exploring how AI is reshaping mental health and wellness, from chatbots to personalized treatment planning.">
-
-    <meta name="keywords" content="AI, artificial intelligence, mental health, wellness, chatbots, therapy, digital health, Serenity, mental wellness">    <meta name="keywords" content="AI, artificial intelligence, mental health, wellness, chatbots, therapy, digital health, Serenity, mental wellness">
-
-    <meta name="author" content="AI Wellness Team">    <meta name="author" content="AI Wellness Team">
-
-    <meta name="robots" content="index, follow">    <meta name="robots" content="index, follow">
-
-    <meta name="language" content="English">    <meta name="language" content="English">
-
-        
-
-    <!-- Open Graph Meta Tags -->    <!-- Open Graph Meta Tags -->
-
-    <meta property="og:title" content="AI in Mental Health & Wellness">    <meta property="og:title" content="AI in Mental Health & Wellness">
-
-    <meta property="og:description" content="Exploring how AI is reshaping mental health and wellness, from chatbots to personalized treatment planning.">    <meta property="og:description" content="Exploring how AI is reshaping mental health and wellness, from chatbots to personalized treatment planning.">
-
-    <meta property="og:type" content="article">    <meta property="og:type" content="article">
-
-    <meta property="og:url" content="https://your-domain.vercel.app">    <meta property="og:url" content="https://your-domain.vercel.app">
-
-    <meta property="og:site_name" content="AI Wellness Blog">    <meta property="og:site_name" content="AI Wellness Blog">
-
-    <meta property="og:locale" content="en_US">    <meta property="og:locale" content="en_US">
-
-        
-
-    <!-- Twitter Card Meta Tags -->    <!-- Twitter Card Meta Tags -->
-
-    <meta name="twitter:card" content="summary_large_image">    <meta name="twitter:card" content="summary_large_image">
-
-    <meta name="twitter:title" content="AI in Mental Health & Wellness">    <meta name="twitter:title" content="AI in Mental Health & Wellness">
-
-    <meta name="twitter:description" content="Exploring how AI is reshaping mental health and wellness, from chatbots to personalized treatment planning.">    <meta name="twitter:description" content="Exploring how AI is reshaping mental health and wellness, from chatbots to personalized treatment planning.">
-
-    <meta name="twitter:site" content="@Shashwat0202">    <meta name="twitter:site" content="@Shashwat0202">
-
-        
-
-    <!-- Favicon -->    <!-- Favicon -->
-
-    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
-
-    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
-
-        
-
-    <!-- Theme Color -->    <!-- Theme Color -->
-
-    <meta name="theme-color" content="#0ea5e9">    <meta name="theme-color" content="#0ea5e9">
-
-    <meta name="msapplication-TileColor" content="#0ea5e9">    <meta name="msapplication-TileColor" content="#0ea5e9">
-
-        
-
-    <!-- Canonical URL -->    <!-- Canonical URL -->
-
-    <link rel="canonical" href="https://your-domain.vercel.app">    <link rel="canonical" href="https://your-domain.vercel.app">
-
-        
-
-    <!-- JSON-LD Structured Data -->    <!-- JSON-LD Structured Data -->
-
-    <script type="application/ld+json">    <script type="application/ld+json">
-
-    {    {
-
-        "@context": "https://schema.org",        "@context": "https://schema.org",
-
-        "@type": "Article",        "@type": "Article",
-
-        "headline": "AI in Mental Health & Wellness",        "headline": "AI in Mental Health & Wellness",
-
-        "description": "Exploring how AI is reshaping mental health and wellness, from chatbots to personalized treatment planning.",        "description": "Exploring how AI is reshaping mental health and wellness, from chatbots to personalized treatment planning.",
-
-        "author": {        "author": {
-
-            "@type": "Organization",            "@type": "Organization",
-
-            "name": "AI Wellness Team"            "name": "AI Wellness Team"
-
-        },        },
-
-        "datePublished": "2025-10-29",        "datePublished": "2025-10-29",
-
-        "dateModified": "2025-10-29",        "dateModified": "2025-10-29",
-
-        "mainEntityOfPage": {        "mainEntityOfPage": {
-
-            "@type": "WebPage",            "@type": "WebPage",
-
-            "@id": "https://your-domain.vercel.app"            "@id": "https://your-domain.vercel.app"
-
-        },        },
-
-        "publisher": {        "publisher": {
-
-            "@type": "Organization",            "@type": "Organization",
-
-            "name": "AI Wellness",            "name": "AI Wellness",
-
-            "logo": {            "logo": {
-
-                "@type": "ImageObject",                "@type": "ImageObject",
-
-                "url": "https://your-domain.vercel.app/logo.png"                "url": "https://your-domain.vercel.app/logo.png"
-
-            }            }
-
-        },        },
-
-        "articleSection": "Technology",        "articleSection": "Technology",
-
-        "keywords": ["AI", "Mental Health", "Wellness", "Digital Health", "Technology"]        "keywords": ["AI", "Mental Health", "Wellness", "Digital Health", "Technology"]
-
-    }    }
-
-    </script>    </script>
-
-        
-
-    <!-- Tailwind CSS -->    <!-- Tailwind CSS -->
-
-    <script src="https://cdn.tailwindcss.com"></script>    <script src="https://cdn.tailwindcss.com"></script>
-
-        
-
-    <!-- Google Fonts -->    <!-- Google Fonts -->
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-        
-
-    <!-- Font Awesome -->    <!-- Font Awesome -->
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-        
-
-    <!-- AOS Animation Library -->    <!-- AOS Animation Library -->
-
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
-        
-
-    <!-- Custom CSS -->    <!-- Custom CSS -->
-
-    <link rel="stylesheet" href="css/style.css">    <link rel="stylesheet" href="css/style.css">
-
-        
-
-    <!-- Tailwind Config -->    <!-- Tailwind Config -->
-
-    <script>    <script>
-
-        tailwind.config = {        tailwind.config = {
-
-            theme: {            theme: {
-
-                extend: {                extend: {
-
-                    fontFamily: {                    fontFamily: {
-
-                        'sans': ['Inter', 'sans-serif'],                        'sans': ['Inter', 'sans-serif'],
-
-                        'serif': ['Playfair Display', 'serif'],                        'serif': ['Playfair Display', 'serif'],
-
-                    },                    },
-
-                    colors: {                    colors: {
-
-                        'primary': {                        'primary': {
-
-                            50: '#f0f9ff',                            50: '#f0f9ff',
-
-                            100: '#e0f2fe',                            100: '#e0f2fe',
-
-                            200: '#bae6fd',                            200: '#bae6fd',
-
-                            300: '#7dd3fc',                            300: '#7dd3fc',
-
-                            400: '#38bdf8',                            400: '#38bdf8',
-
-                            500: '#0ea5e9',                            500: '#0ea5e9',
-
-                            600: '#0284c7',                            600: '#0284c7',
-
-                            700: '#0369a1',                            700: '#0369a1',
-
-                            800: '#075985',                            800: '#075985',
-
-                            900: '#0c4a6e',                            900: '#0c4a6e',
-
-                        },                        },
-
-                        'accent': {                        'accent': {
-
-                            50: '#fdf4ff',                            50: '#fdf4ff',
-
-                            100: '#fae8ff',                            100: '#fae8ff',
-
-                            200: '#f5d0fe',                            200: '#f5d0fe',
-
-                            300: '#f0abfc',                            300: '#f0abfc',
-
-                            400: '#e879f9',                            400: '#e879f9',
-
-                            500: '#d946ef',                            500: '#d946ef',
-
-                            600: '#c026d3',                            600: '#c026d3',
-
-                            700: '#a21caf',                            700: '#a21caf',
-
-                            800: '#86198f',                            800: '#86198f',
-
-                            900: '#701a75',                            900: '#701a75',
-
-                        }                        }
-
-                    },                    },
-
-                    animation: {                    animation: {
-
-                        'fade-in-up': 'fadeInUp 0.8s ease-out',                        'fade-in-up': 'fadeInUp 0.8s ease-out',
-
-                        'fade-in-down': 'fadeInDown 0.8s ease-out',                        'fade-in-down': 'fadeInDown 0.8s ease-out',
-
-                        'fade-in-left': 'fadeInLeft 0.8s ease-out',                        'fade-in-left': 'fadeInLeft 0.8s ease-out',
-
-                        'fade-in-right': 'fadeInRight 0.8s ease-out',                        'fade-in-right': 'fadeInRight 0.8s ease-out',
-
-                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-
-                        'float': 'float 6s ease-in-out infinite',                        'float': 'float 6s ease-in-out infinite',
-
-                        'gradient': 'gradient 8s ease infinite',                        'gradient': 'gradient 8s ease infinite',
-
-                    }                    }
-
-                }                }
-
-            }            }
-
-        }        }
-
-    </script>    </script>
-
-</head></head>
-
-<body class="font-sans text-gray-900 overflow-x-hidden"><body class="font-sans text-gray-900 overflow-x-hidden">
-
-    <!-- Progress Bar -->    <!-- Progress Bar -->
-
-    <div id="progress-bar" class="fixed top-0 left-0 h-1 bg-gradient-to-r from-primary-500 to-accent-500 z-50 transition-all duration-300"></div>    <div id="progress-bar" class="fixed top-0 left-0 h-1 bg-gradient-to-r from-primary-500 to-accent-500 z-50 transition-all duration-300"></div>
-
-        
-
-    <!-- Navigation -->    <!-- Navigation -->
-
-    <nav class="fixed w-full bg-white/90 backdrop-blur-lg z-40 border-b border-gray-100 transition-all duration-300" id="navbar">    <nav class="fixed w-full bg-white/90 backdrop-blur-lg z-40 border-b border-gray-100 transition-all duration-300" id="navbar">
-
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-            <div class="flex justify-between items-center h-16">            <div class="flex justify-between items-center h-16">
-
-                <div class="flex-shrink-0">                <div class="flex-shrink-0">
-
-                    <a href="#" class="text-2xl font-bold text-primary-600 hover:text-primary-700 transition-colors">                    <a href="#" class="text-2xl font-bold text-primary-600 hover:text-primary-700 transition-colors">
-
-                        AI in Mental Health & Wellness                        AI in Mental Health & Wellness
-
-                    </a>                    </a>
-
-                </div>                </div>
-
-                                
-
-                <!-- Desktop Menu -->                <!-- Desktop Menu -->
-
-                <div class="hidden md:block">                <div class="hidden md:block">
-
-                    <div class="ml-10 flex items-baseline space-x-8">                    <div class="ml-10 flex items-baseline space-x-8">
-
-                        <a href="#home" class="nav-link text-gray-700 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300">Home</a>                        <a href="#home" class="nav-link text-gray-700 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300">Home</a>
-
-                        <a href="#about" class="nav-link text-gray-700 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300">About</a>                        <a href="#about" class="nav-link text-gray-700 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300">About</a>
-
-                        <a href="#content" class="nav-link text-gray-700 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300">Article</a>                        <a href="#content" class="nav-link text-gray-700 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300">Article</a>
-
-                        <a href="#contact" class="nav-link text-gray-700 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300">Contact</a>                        <a href="#contact" class="nav-link text-gray-700 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300">Contact</a>
-
-                    </div>                    </div>
-
-                </div>                </div>
-
-                                
-
-                <!-- Mobile menu button -->                <!-- Mobile menu button -->
-
-                <div class="md:hidden">                <div class="md:hidden">
-
-                    <button id="mobile-menu-button" class="text-gray-700 hover:text-primary-600 focus:outline-none focus:text-primary-600 transition-colors">                    <button id="mobile-menu-button" class="text-gray-700 hover:text-primary-600 focus:outline-none focus:text-primary-600 transition-colors">
-
-                        <i class="fas fa-bars text-xl"></i>                        <i class="fas fa-bars text-xl"></i>
-
-                    </button>                    </button>
-
-                </div>                </div>
-
-            </div>            </div>
-
-        </div>        </div>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI in Mental Health & Wellness</title>
+    <meta name="description" content="Exploring how AI is reshaping mental health and wellness, from chatbots to personalized treatment planning.">
+    <meta name="keywords" content="AI, artificial intelligence, mental health, wellness, chatbots, therapy, digital health, Serenity, mental wellness">
+    <meta name="author" content="AI Wellness Team">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="AI in Mental Health & Wellness">
+    <meta property="og:description" content="Exploring how AI is reshaping mental health and wellness, from chatbots to personalized treatment planning.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://your-domain.vercel.app">
+    <meta property="og:site_name" content="AI Wellness Blog">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AI in Mental Health & Wellness">
+    <meta name="twitter:description" content="Exploring how AI is reshaping mental health and wellness, from chatbots to personalized treatment planning.">
+    <meta name="twitter:site" content="@Shashwat0202">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#0ea5e9">
+    <meta name="msapplication-TileColor" content="#0ea5e9">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://your-domain.vercel.app">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "AI in Mental Health & Wellness",
+        "description": "Exploring how AI is reshaping mental health and wellness, from chatbots to personalized treatment planning.",
+        "author": {
+            "@type": "Organization",
+            "name": "AI Wellness Team"
+        },
+        "datePublished": "2025-10-29",
+        "dateModified": "2025-10-29",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://your-domain.vercel.app"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "AI Wellness",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://your-domain.vercel.app/logo.png"
+            }
+        },
+        "articleSection": "Technology",
+        "keywords": ["AI", "Mental Health", "Wellness", "Digital Health", "Technology"]
+    }
+    </script>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'serif': ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        'primary': {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        },
+                        'accent': {
+                            50: '#fdf4ff',
+                            100: '#fae8ff',
+                            200: '#f5d0fe',
+                            300: '#f0abfc',
+                            400: '#e879f9',
+                            500: '#d946ef',
+                            600: '#c026d3',
+                            700: '#a21caf',
+                            800: '#86198f',
+                            900: '#701a75',
+                        }
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out',
+                        'fade-in-down': 'fadeInDown 0.8s ease-out',
+                        'fade-in-left': 'fadeInLeft 0.8s ease-out',
+                        'fade-in-right': 'fadeInRight 0.8s ease-out',
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                        'gradient': 'gradient 8s ease infinite',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-900 overflow-x-hidden">
+    <!-- Progress Bar -->
+    <div id="progress-bar" class="fixed top-0 left-0 h-1 bg-gradient-to-r from-primary-500 to-accent-500 z-50 transition-all duration-300"></div>
+    
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-lg z-40 border-b border-gray-100 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-2xl font-bold text-primary-600 hover:text-primary-700 transition-colors">
+                        AI in Mental Health & Wellness
+                    </a>
+                </div>
                 
-
-        <!-- Mobile Menu -->        <!-- Mobile Menu -->
-
-        <div id="mobile-menu" class="md:hidden hidden bg-white/95 backdrop-blur-lg border-t border-gray-100">        <div id="mobile-menu" class="md:hidden hidden bg-white/95 backdrop-blur-lg border-t border-gray-100">
-
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-
-                <a href="#home" class="block px-3 py-2 text-gray-700 hover:text-primary-600 rounded-md text-base font-medium transition-colors">Home</a>                <a href="#home" class="block px-3 py-2 text-gray-700 hover:text-primary-600 rounded-md text-base font-medium transition-colors">Home</a>
-
-                <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-primary-600 rounded-md text-base font-medium transition-colors">About</a>                <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-primary-600 rounded-md text-base font-medium transition-colors">About</a>
-
-                <a href="#content" class="block px-3 py-2 text-gray-700 hover:text-primary-600 rounded-md text-base font-medium transition-colors">Article</a>                <a href="#content" class="block px-3 py-2 text-gray-700 hover:text-primary-600 rounded-md text-base font-medium transition-colors">Article</a>
-
-                <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-primary-600 rounded-md text-base font-medium transition-colors">Contact</a>                <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-primary-600 rounded-md text-base font-medium transition-colors">Contact</a>
-
-            </div>            </div>
-
-        </div>        </div>
-
-    </nav>    </nav>
-
+                <!-- Desktop Menu -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="nav-link text-gray-700 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300">Home</a>
+                        <a href="#about" class="nav-link text-gray-700 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300">About</a>
+                        <a href="#content" class="nav-link text-gray-700 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300">Article</a>
+                        <a href="#contact" class="nav-link text-gray-700 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300">Contact</a>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-primary-600 focus:outline-none focus:text-primary-600 transition-colors">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
         
-
-    <!-- Hero Section -->    <!-- Hero Section -->
-
-    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary-50 via-white to-accent-50">    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary-50 via-white to-accent-50">
-
-        <!-- Hero Background Image -->        <!-- Hero Background Image -->
-
-        <div class="absolute inset-0 z-0">        <div class="absolute inset-0 z-0">
-
-            <img src="assets/images/img1.jpg" alt="AI and Mental Health Visualization" class="w-full h-full object-cover opacity-10" loading="lazy" />            <img src="assets/images/img1.jpg" alt="AI and Mental Health Visualization" class="w-full h-full object-cover opacity-10" loading="lazy" />
-
-            <div class="absolute inset-0 bg-gradient-to-br from-primary-50/80 via-white/90 to-accent-50/80"></div>            <div class="absolute inset-0 bg-gradient-to-br from-primary-50/80 via-white/90 to-accent-50/80"></div>
-
-        </div>        </div>
-
-                
-
-        <!-- Animated Background -->        <!-- Animated Background -->
-
-        <div class="absolute inset-0 overflow-hidden">        <div class="absolute inset-0 overflow-hidden">
-
-            <div class="floating-shapes">            <div class="floating-shapes">
-
-                <div class="shape shape-1"></div>                <div class="shape shape-1"></div>
-
-                <div class="shape shape-2"></div>                <div class="shape shape-2"></div>
-
-                <div class="shape shape-3"></div>                <div class="shape shape-3"></div>
-
-                <div class="shape shape-4"></div>                <div class="shape shape-4"></div>
-
-                <div class="shape shape-5"></div>                <div class="shape shape-5"></div>
-
-            </div>            </div>
-
-        </div>        </div>
-
-                
-
-        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-
-            <div class="space-y-8" data-aos="fade-up" data-aos-duration="1000">            <div class="space-y-8" data-aos="fade-up" data-aos-duration="1000">
-
-                <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif font-bold text-gray-900 leading-tight">                <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif font-bold text-gray-900 leading-tight">
-
-                    <span class="bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent">                    <span class="bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent">
-
-                        AI in Mental Health                        AI in Mental Health
-
-                    </span>                    </span>
-
-                    <br>                    <br>
-
-                    <span class="text-gray-700">& Wellness</span>                    <span class="text-gray-700">& Wellness</span>
-
-                </h1>                </h1>
-
-                                
-
-                <p class="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="200">                <p class="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="200">
-
-                    Exploring how artificial intelligence is reshaping mental health care, from chatbots to personalized treatment planning.                    Exploring how artificial intelligence is reshaping mental health care, from chatbots to personalized treatment planning.
-
-                </p>                </p>
-
-                                
-
-                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center" data-aos="fade-up" data-aos-delay="400">                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center" data-aos="fade-up" data-aos-delay="400">
-
-                    <a href="#content" class="btn-primary group">                    <a href="#content" class="btn-primary group">
-
-                        Read the Article                        Read the Article
-
-                        <i class="fas fa-arrow-down ml-2 group-hover:translate-y-1 transition-transform"></i>                        <i class="fas fa-arrow-down ml-2 group-hover:translate-y-1 transition-transform"></i>
-
-                    </a>                    </a>
-
-                    <a href="#about" class="btn-secondary">                    <a href="#about" class="btn-secondary">
-
-                        Learn More                        Learn More
-
-                    </a>                    </a>
-
-                </div>                </div>
-
-            </div>            </div>
-
-        </div>        </div>
-
-                
-
-        <!-- Scroll Indicator -->        <!-- Scroll Indicator -->
-
-        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-
-            <i class="fas fa-chevron-down text-primary-500 text-2xl"></i>            <i class="fas fa-chevron-down text-primary-500 text-2xl"></i>
-
-        </div>        </div>
-
-    </section>    </section>
-
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white/95 backdrop-blur-lg border-t border-gray-100">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 text-gray-700 hover:text-primary-600 rounded-md text-base font-medium transition-colors">Home</a>
+                <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-primary-600 rounded-md text-base font-medium transition-colors">About</a>
+                <a href="#content" class="block px-3 py-2 text-gray-700 hover:text-primary-600 rounded-md text-base font-medium transition-colors">Article</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-primary-600 rounded-md text-base font-medium transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary-50 via-white to-accent-50">
+        <!-- Hero Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="assets/images/img1.jpg" alt="AI and Mental Health Visualization" class="w-full h-full object-cover opacity-10" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-br from-primary-50/80 via-white/90 to-accent-50/80"></div>
+        </div>
         
-
-    <!-- About Section -->    <!-- About Section -->
-
-    <section id="about" class="py-20 bg-white">    <section id="about" class="py-20 bg-white">
-
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-            <div class="text-center mb-16" data-aos="fade-up">            <div class="text-center mb-16" data-aos="fade-up">
-
-                <h2 class="text-3xl md:text-5xl font-serif font-bold text-gray-900 mb-6">                <h2 class="text-3xl md:text-5xl font-serif font-bold text-gray-900 mb-6">
-
-                    The Future of Mental <span class="text-primary-600">Wellness</span>                    The Future of Mental <span class="text-primary-600">Wellness</span>
-
-                </h2>                </h2>
-
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-
-                    Discover how AI technologies are bridging the gap between traditional mental health care and innovative digital solutions.                    Discover how AI technologies are bridging the gap between traditional mental health care and innovative digital solutions.
-
-                </p>                </p>
-
-            </div>            </div>
-
+        <!-- Animated Background -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+                <div class="shape shape-5"></div>
+            </div>
+        </div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="space-y-8" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif font-bold text-gray-900 leading-tight">
+                    <span class="bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent">
+                        AI in Mental Health
+                    </span>
+                    <br>
+                    <span class="text-gray-700">& Wellness</span>
+                </h1>
+                
+                <p class="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+                    Exploring how artificial intelligence is reshaping mental health care, from chatbots to personalized treatment planning.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center" data-aos="fade-up" data-aos-delay="400">
+                    <a href="#content" class="btn-primary group">
+                        Read the Article
+                        <i class="fas fa-arrow-down ml-2 group-hover:translate-y-1 transition-transform"></i>
+                    </a>
+                    <a href="#about" class="btn-secondary">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-primary-500 text-2xl"></i>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-5xl font-serif font-bold text-gray-900 mb-6">
+                    The Future of Mental <span class="text-primary-600">Wellness</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Discover how AI technologies are bridging the gap between traditional mental health care and innovative digital solutions.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-4">
+                        <img src="assets/images/img2.jpg" alt="AI Brain Illustration" class="w-full h-48 object-cover rounded-xl mb-4" loading="lazy" />
+                    </div>
+                    <div class="feature-icon bg-primary-100 text-primary-600">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Intelligent Support</h3>
+                    <p class="text-gray-600">AI-powered chatbots and conversational agents provide 24/7 emotional support and guidance.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="mb-4">
+                        <img src="assets/images/img3.jpg" alt="Data Analytics for Mental Health" class="w-full h-48 object-cover rounded-xl mb-4" loading="lazy" />
+                    </div>
+                    <div class="feature-icon bg-accent-100 text-accent-600">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Early Detection</h3>
+                    <p class="text-gray-600">Advanced algorithms help identify mental health risks before they become critical.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="mb-4">
+                        <img src="assets/images/img4.jpg" alt="Accessible Mental Health Care" class="w-full h-48 object-cover rounded-xl mb-4" loading="lazy" />
+                    </div>
+                    <div class="feature-icon bg-green-100 text-green-600">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Accessible Care</h3>
+                    <p class="text-gray-600">Breaking down barriers to mental health support through scalable digital solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Main Content Section -->
+    <section id="content" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+                <!-- Main Article Content -->
+                <div class="lg:col-span-3">
+                    <article class="bg-white rounded-3xl shadow-xl p-8 md:p-12">
+                        <header class="mb-12 text-center" data-aos="fade-up">
+                            <div class="mb-8">
+                                <img src="assets/images/img5.jpg" alt="AI in Mental Health and Wellness - Featured Image" class="w-full max-w-4xl mx-auto rounded-2xl shadow-2xl" loading="lazy" />
+                            </div>
+                            <h1 class="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-6">
+                                AI in Mental Health & Wellness
+                            </h1>
+                            
+                            <!-- Author Information -->
+                            <div class="author-info mb-8 p-6 bg-gradient-to-r from-primary-50 to-accent-50 rounded-xl border border-primary-100">
+                                <div class="flex flex-col md:flex-row items-center gap-6">
+                                    <div class="author-avatar">
+                                        <img src="assets/images/img6.jpg" alt="Shashwat Ranjan" class="w-20 h-20 rounded-full object-cover border-4 border-white shadow-lg" loading="lazy" />
+                                    </div>
+                                    <div class="author-details text-center md:text-left">
+                                        <h3 class="text-xl font-bold text-gray-900 mb-2">Shashwat Ranjan</h3>
+                                        <p class="text-gray-600 mb-3">Passionate Software Developer</p>
+                                        <p class="text-sm text-gray-500 mb-3 max-w-2xl">
+                                            Third-year B.Tech Computer Science student at Bennett University, specializing in full-stack development, data science, and innovative technology solutions. Passionate about creating impactful digital experiences and exploring the intersection of artificial intelligence and mental wellness.
+                                        </p>
+                                        <div class="flex justify-center md:justify-start space-x-3">
+                                            <a href="https://www.linkedin.com/in/shashwat-ranjan-16261b390/" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 transition-colors">
+                                                <i class="fab fa-linkedin-in text-lg"></i>
+                                            </a>
+                                            <a href="https://x.com/Shashwat0202" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 transition-colors">
+                                                <i class="fab fa-twitter text-lg"></i>
+                                            </a>
+                                            <a href="https://www.instagram.com/shashwat0202" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 transition-colors">
+                                                <i class="fab fa-instagram text-lg"></i>
+                                            </a>
+                                            <a href="https://github.com/SHASHWAT0202" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 transition-colors">
+                                                <i class="fab fa-github text-lg"></i>
+                                            </a>
+                                            <a href="https://linktr.ee/Shashwat0202" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 transition-colors">
+                                                <i class="fas fa-link text-lg"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center justify-center space-x-4 text-gray-500">
+                                <span><i class="far fa-calendar-alt mr-2"></i>October 29, 2025</span>
+                                <span><i class="far fa-clock mr-2"></i>15 min read</span>
+                                <span><i class="far fa-eye mr-2"></i>AI Research</span>
+                            </div>
+                        </header>
+                
+                <div class="prose prose-lg prose-primary max-w-none">
+                    <!-- Introduction -->
+                    <div data-aos="fade-up" data-aos-delay="100">
+                        <p class="text-xl text-gray-700 leading-relaxed mb-8">
+                            In the last few years, AI has started to reshape many aspects of our lives-from how we shop to how we work. One of the most promising and complex frontiers is its place in mental health and wellness. This blog explores how AI is being applied in mental health contexts, what benefits it may bring, the challenges and risks, and what the future might hold for individuals and care systems alike.
+                        </p>
+                    </div>
+                    
+                    <!-- Section 1 -->
+                    <div class="content-section" data-aos="fade-up" data-aos-delay="200">
+                        <h2 class="section-title" id="section-1">1. Why the need is so urgent</h2>
                         
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
-
-                    <div class="mb-4">                    <div class="mb-4">
-
-                        <img src="assets/images/img2.jpg" alt="AI Brain Illustration" class="w-full h-48 object-cover rounded-xl mb-4" loading="lazy" />                        <img src="assets/images/img2.jpg" alt="AI Brain Illustration" class="w-full h-48 object-cover rounded-xl mb-4" loading="lazy" />
-
-                    </div>                    </div>
-
-                    <div class="feature-icon bg-primary-100 text-primary-600">                    <div class="feature-icon bg-primary-100 text-primary-600">
-
-                        <i class="fas fa-brain"></i>                        <i class="fas fa-brain"></i>
-
-                    </div>                    </div>
-
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Intelligent Support</h3>                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Intelligent Support</h3>
-
-                    <p class="text-gray-600">AI-powered chatbots and conversational agents provide 24/7 emotional support and guidance.</p>                    <p class="text-gray-600">AI-powered chatbots and conversational agents provide 24/7 emotional support and guidance.</p>
-
-                </div>                </div>
-
-                                
-
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
-
-                    <div class="mb-4">                    <div class="mb-4">
-
-                        <img src="assets/images/img3.jpg" alt="Data Analytics for Mental Health" class="w-full h-48 object-cover rounded-xl mb-4" loading="lazy" />                        <img src="assets/images/img3.jpg" alt="Data Analytics for Mental Health" class="w-full h-48 object-cover rounded-xl mb-4" loading="lazy" />
-
-                    </div>                    </div>
-
-                    <div class="feature-icon bg-accent-100 text-accent-600">                    <div class="feature-icon bg-accent-100 text-accent-600">
-
-                        <i class="fas fa-chart-line"></i>                        <i class="fas fa-chart-line"></i>
-
-                    </div>                    </div>
-
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Early Detection</h3>                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Early Detection</h3>
-
-                    <p class="text-gray-600">Advanced algorithms help identify mental health risks before they become critical.</p>                    <p class="text-gray-600">Advanced algorithms help identify mental health risks before they become critical.</p>
-
-                </div>                </div>
-
-                                
-
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
-
-                    <div class="mb-4">                    <div class="mb-4">
-
-                        <img src="assets/images/img4.jpg" alt="Accessible Mental Health Care" class="w-full h-48 object-cover rounded-xl mb-4" loading="lazy" />                        <img src="assets/images/img4.jpg" alt="Accessible Mental Health Care" class="w-full h-48 object-cover rounded-xl mb-4" loading="lazy" />
-
-                    </div>                    </div>
-
-                    <div class="feature-icon bg-green-100 text-green-600">                    <div class="feature-icon bg-green-100 text-green-600">
-
-                        <i class="fas fa-users"></i>                        <i class="fas fa-users"></i>
-
-                    </div>                    </div>
-
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Accessible Care</h3>                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Accessible Care</h3>
-
-                    <p class="text-gray-600">Breaking down barriers to mental health support through scalable digital solutions.</p>                    <p class="text-gray-600">Breaking down barriers to mental health support through scalable digital solutions.</p>
-
-                </div>                </div>
-
-            </div>            </div>
-
-        </div>        </div>
-
-    </section>    </section>
-
-        
-
-    <!-- Main Content Section -->    <!-- Main Content Section -->
-
-    <section id="content" class="py-20 bg-gray-50">    <section id="content" class="py-20 bg-gray-50">
-
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-            <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">            <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
-
-                <!-- Main Article Content -->                <!-- Main Article Content -->
-
-                <div class="lg:col-span-3">                <div class="lg:col-span-3">
-
-                    <article class="bg-white rounded-3xl shadow-xl p-8 md:p-12">                    <article class="bg-white rounded-3xl shadow-xl p-8 md:p-12">
-
-                        <header class="mb-12 text-center" data-aos="fade-up">                        <header class="mb-12 text-center" data-aos="fade-up">
-
-                            <div class="mb-8">                            <div class="mb-8">
-
-                                <img src="assets/images/img5.jpg" alt="AI in Mental Health and Wellness - Featured Image" class="w-full max-w-4xl mx-auto rounded-2xl shadow-2xl" loading="lazy" />                                <img src="assets/images/img5.jpg" alt="AI in Mental Health and Wellness - Featured Image" class="w-full max-w-4xl mx-auto rounded-2xl shadow-2xl" loading="lazy" />
-
-                            </div>                            </div>
-
-                            <h1 class="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-6">                            <h1 class="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-6">
-
-                                AI in Mental Health & Wellness                                AI in Mental Health & Wellness
-
-                            </h1>                            </h1>
-
-                                                        
-
-                            <!-- Author Information -->                            <!-- Author Information -->
-
-                            <div class="author-info mb-8 p-6 bg-gradient-to-r from-primary-50 to-accent-50 rounded-xl border border-primary-100">                            <div class="author-info mb-8 p-6 bg-gradient-to-r from-primary-50 to-accent-50 rounded-xl border border-primary-100">
-
-                                <div class="flex flex-col md:flex-row items-center gap-6">                                <div class="flex flex-col md:flex-row items-center gap-6">
-
-                                    <div class="author-avatar">                                    <div class="author-avatar">
-
-                                        <img src="assets/images/img6.jpg" alt="Shashwat Ranjan" class="w-20 h-20 rounded-full object-cover border-4 border-white shadow-lg" loading="lazy" />                                        <img src="assets/images/img6.jpg" alt="Shashwat Ranjan" class="w-20 h-20 rounded-full object-cover border-4 border-white shadow-lg" loading="lazy" />
-
-                                    </div>                                    </div>
-
-                                    <div class="author-details text-center md:text-left">                                    <div class="author-details text-center md:text-left">
-
-                                        <h3 class="text-xl font-bold text-gray-900 mb-2">Shashwat Ranjan</h3>                                        <h3 class="text-xl font-bold text-gray-900 mb-2">Shashwat Ranjan</h3>
-
-                                        <p class="text-gray-600 mb-3">Passionate Software Developer</p>                                        <p class="text-gray-600 mb-3">Passionate Software Developer</p>
-
-                                        <p class="text-sm text-gray-500 mb-3 max-w-2xl">                                        <p class="text-sm text-gray-500 mb-3 max-w-2xl">
-
-                                            Third-year B.Tech Computer Science student at Bennett University, specializing in full-stack development, data science, and innovative technology solutions. Passionate about creating impactful digital experiences and exploring the intersection of artificial intelligence and mental wellness.                                            Third-year B.Tech Computer Science student at Bennett University, specializing in full-stack development, data science, and innovative technology solutions. Passionate about creating impactful digital experiences and exploring the intersection of artificial intelligence and mental wellness.
-
-                                        </p>                                        </p>
-
-                                        <div class="flex justify-center md:justify-start space-x-3">                                        <div class="flex justify-center md:justify-start space-x-3">
-
-                                            <a href="https://www.linkedin.com/in/shashwat-ranjan-16261b390/" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 transition-colors">                                            <a href="https://www.linkedin.com/in/shashwat-ranjan-16261b390/" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 transition-colors">
-
-                                                <i class="fab fa-linkedin-in text-lg"></i>                                                <i class="fab fa-linkedin-in text-lg"></i>
-
-                                            </a>                                            </a>
-
-                                            <a href="https://x.com/Shashwat0202" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 transition-colors">                                            <a href="https://x.com/Shashwat0202" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 transition-colors">
-
-                                                <i class="fab fa-twitter text-lg"></i>                                                <i class="fab fa-twitter text-lg"></i>
-
-                                            </a>                                            </a>
-
-                                            <a href="https://www.instagram.com/shashwat0202" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 transition-colors">                                            <a href="https://www.instagram.com/shashwat0202" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 transition-colors">
-
-                                                <i class="fab fa-instagram text-lg"></i>                                                <i class="fab fa-instagram text-lg"></i>
-
-                                            </a>                                            </a>
-
-                                            <a href="https://github.com/SHASHWAT0202" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 transition-colors">                                            <a href="https://github.com/SHASHWAT0202" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 transition-colors">
-
-                                                <i class="fab fa-github text-lg"></i>                                                <i class="fab fa-github text-lg"></i>
-
-                                            </a>                                            </a>
-
-                                            <a href="https://linktr.ee/Shashwat0202" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 transition-colors">                                            <a href="https://linktr.ee/Shashwat0202" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 transition-colors">
-
-                                                <i class="fas fa-link text-lg"></i>                                                <i class="fas fa-link text-lg"></i>
-
-                                            </a>                                            </a>
-
-                                        </div>                                        </div>
-
-                                    </div>                                    </div>
-
-                                </div>                                </div>
-
-                            </div>                            </div>
-
-                                                        
-
-                            <div class="flex items-center justify-center space-x-4 text-gray-500">                            <div class="flex items-center justify-center space-x-4 text-gray-500">
-
-                                <span><i class="far fa-calendar-alt mr-2"></i>October 29, 2025</span>                                <span><i class="far fa-calendar-alt mr-2"></i>October 29, 2025</span>
-
-                                <span><i class="far fa-clock mr-2"></i>15 min read</span>                                <span><i class="far fa-clock mr-2"></i>15 min read</span>
-
-                                <span><i class="far fa-eye mr-2"></i>AI Research</span>                                <span><i class="far fa-eye mr-2"></i>AI Research</span>
-
-                            </div>                            </div>
-
-                        </header>                        </header>
-
-                                
-
-                <div class="prose prose-lg prose-primary max-w-none">                <div class="prose prose-lg prose-primary max-w-none">
-
-                    <!-- Complete article content goes here - same as the root index.html -->                    <!-- Introduction -->
-
-                    <!-- I'm copying the full content from the root file -->                    <div data-aos="fade-up" data-aos-delay="100">
-
-                                            <p class="text-xl text-gray-700 leading-relaxed mb-8">
-
-                    <!-- Introduction -->                            In the last few years, AI has started to reshape many aspects of our lives-from how we shop to how we work. One of the most promising and complex frontiers is its place in mental health and wellness. This blog explores how AI is being applied in mental health contexts, what benefits it may bring, the challenges and risks, and what the future might hold for individuals and care systems alike.
-
-                    <div data-aos="fade-up" data-aos-delay="100">                        </p>
-
-                        <p class="text-xl text-gray-700 leading-relaxed mb-8">                    </div>
-
-                            In the last few years, AI has started to reshape many aspects of our lives-from how we shop to how we work. One of the most promising and complex frontiers is its place in mental health and wellness. This blog explores how AI is being applied in mental health contexts, what benefits it may bring, the challenges and risks, and what the future might hold for individuals and care systems alike.                    
-
-                        </p>                    <!-- Section 1 -->
-
-                    </div>                    <div class="content-section" data-aos="fade-up" data-aos-delay="200">
-
-                                            <h2 class="section-title" id="section-1">1. Why the need is so urgent</h2>
-
-                    <!-- Section 1 -->                        
-
-                    <div class="content-section" data-aos="fade-up" data-aos-delay="200">                        <div class="mb-8">
-
-                        <h2 class="section-title" id="section-1">1. Why the need is so urgent</h2>                            <img src="assets/images/img7.jpg" alt="Mental Health Access Gap Illustration" class="w-full max-w-2xl mx-auto rounded-xl shadow-lg mb-6" loading="lazy" />
-
-                                                </div>
-
-                        <div class="mb-8">                        
-
-                            <img src="assets/images/img7.jpg" alt="Mental Health Access Gap Illustration" class="w-full max-w-2xl mx-auto rounded-xl shadow-lg mb-6" loading="lazy" />                        <h3 class="subsection-title">Rising demand, limited supply</h3>
-
-                        </div>                        <p>Mental health disorders are globally prevalent. According to recent reviews, many people with mental health challenges never receive treatment, often due to lack of providers, cost, stigma, or geographic barriers.</p>
-
-                                                
-
-                        <h3 class="subsection-title">Rising demand, limited supply</h3>                        <h3 class="subsection-title">The access gap</h3>
-
-                        <p>Mental health disorders are globally prevalent. According to recent reviews, many people with mental health challenges never receive treatment, often due to lack of providers, cost, stigma, or geographic barriers.</p>                        <p>For example, the World Health Organization (WHO) has highlighted that in many regions there are very few trained mental-health professionals relative to population. AI offers a promise of reaching underserved populations at scale.</p>
-
-                                                
-
-                        <h3 class="subsection-title">The access gap</h3>                        <h3 class="subsection-title">Changing environments</h3>
-
-                        <p>For example, the World Health Organization (WHO) has highlighted that in many regions there are very few trained mental-health professionals relative to population. AI offers a promise of reaching underserved populations at scale.</p>                        <p>The pandemic, increasing stressors-economic, social, digital-and growing awareness about mental wellness have all driven demand. But traditional systems struggle to keep pace.</p>
-
-                                                
-
-                        <h3 class="subsection-title">Changing environments</h3>                        <p><strong>In short:</strong> We are facing a huge "mental-wellness demand vs care capacity" mismatch, and AI could help bridge part of that gap.</p>
-
-                        <p>The pandemic, increasing stressors-economic, social, digital-and growing awareness about mental wellness have all driven demand. But traditional systems struggle to keep pace.</p>                        
-
-                                                <div class="highlight-box">
-
-                        <p><strong>In short:</strong> We are facing a huge "mental-wellness demand vs care capacity" mismatch, and AI could help bridge part of that gap.</p>                            <p><em>This isn't a statistical gap; it's deeply personal. Every unresolved mental health struggle is another human life carrying silent weight. AI, designed thoughtfully-as it is in Serenity-can provide that gentle nudge of support when the silence becomes too heavy.</em></p>
-
-                                                </div>
-
-                        <div class="highlight-box">                    </div>
-
-                            <p><em>This isn't a statistical gap; it's deeply personal. Every unresolved mental health struggle is another human life carrying silent weight. AI, designed thoughtfully-as it is in Serenity-can provide that gentle nudge of support when the silence becomes too heavy.</em></p>                    
-
-                        </div>                    <!-- Section 2 -->
-
-                    </div>                    <div class="content-section" data-aos="fade-up" data-aos-delay="100">
-
-                                            <h2 class="section-title" id="section-2">2. What does AI in mental health look like?</h2>
-
-                    <!-- Truncated for brevity - the full content would go here -->                        
-
-                    <!-- ... -->                        <div class="mb-8">
-
-                                                <img src="assets/images/img8.jpg" alt="AI Applications in Mental Health" class="w-full max-w-3xl mx-auto rounded-xl shadow-lg mb-6" loading="lazy" />
-
-                </div>                        </div>
-
-                </article>                        
-
-                </div>                        <p>AI isn't one monolithic technology; it covers a variety of approaches and use-cases in mental health. Here are some of the main ones:</p>
-
-                                        
-
-                <!-- Sidebar (same structure) -->                        <h3 class="subsection-title">2.1. Chatbots and conversational agents</h3>
-
-                <div class="lg:col-span-1 space-y-6">                        <div class="mb-6">
-
-                    <!-- Table of Contents and other sidebar content -->                            <img src="assets/images/img9.jpg" alt="AI Chatbot for Mental Health Support" class="w-full max-w-xl mx-auto rounded-lg shadow-md mb-4" loading="lazy" />
-
-                    <!-- Same as root index.html -->                        </div>
-
-                </div>                        <div class="highlight-box">
-
-            </div>                            <p><em>The goal isn't to create emotionless robots, but emotionally aware systems — ones that listen, comfort, and help individuals rediscover calm amid chaos.</em></p>
-
-        </div>                        </div>
-
-    </section>                        <p>These are AI systems (often based on natural language processing) that engage users via text or speech, offering support, guidance, mood tracking, or cognitive-behavioural-therapy (CBT) style interactions. For instance, mobile apps embed chatbots for on-demand emotional support.</p>
-
-                            <p>Serenity uses conversational AI not just to "respond," but to listen. It adapts tone and language to the user's emotional state, bringing an element of warmth and mindfulness — something often missing in traditional AI tools.</p>
-
-    <!-- All other sections same as root -->                        
-
-    <!-- Footer and scripts -->                        <h3 class="subsection-title">2.2. Diagnosis, risk detection & monitoring</h3>
-
-                            <p>AI can ingest large datasets — which may include medical records, speech patterns, social-media activity, voice and facial cues — and attempt to predict or flag mental-health issues such as depression, anxiety, or risk of relapse.</p>
-
-    <!-- Scripts -->                        
-
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>                        <h3 class="subsection-title">2.3. Personalized treatment planning</h3>
-
-    <script src="js/script.js"></script>                        <p>Rather than "one size fits all", AI models can help tailor interventions to individuals: for example, proposing certain therapy approaches, monitoring progress, adapting to responses, etc.</p>
-
-</body>                        
-
-</html>                        <h3 class="subsection-title">2.4. Accessibility & scalability</h3>
+                        <div class="mb-8">
+                            <img src="assets/images/img7.jpg" alt="Mental Health Access Gap Illustration" class="w-full max-w-2xl mx-auto rounded-xl shadow-lg mb-6" loading="lazy" />
+                        </div>
+                        
+                        <h3 class="subsection-title">Rising demand, limited supply</h3>
+                        <p>Mental health disorders are globally prevalent. According to recent reviews, many people with mental health challenges never receive treatment, often due to lack of providers, cost, stigma, or geographic barriers.</p>
+                        
+                        <h3 class="subsection-title">The access gap</h3>
+                        <p>For example, the World Health Organization (WHO) has highlighted that in many regions there are very few trained mental-health professionals relative to population. AI offers a promise of reaching underserved populations at scale.</p>
+                        
+                        <h3 class="subsection-title">Changing environments</h3>
+                        <p>The pandemic, increasing stressors-economic, social, digital-and growing awareness about mental wellness have all driven demand. But traditional systems struggle to keep pace.</p>
+                        
+                        <p><strong>In short:</strong> We are facing a huge "mental-wellness demand vs care capacity" mismatch, and AI could help bridge part of that gap.</p>
+                        
+                        <div class="highlight-box">
+                            <p><em>This isn't a statistical gap; it's deeply personal. Every unresolved mental health struggle is another human life carrying silent weight. AI, designed thoughtfully-as it is in Serenity-can provide that gentle nudge of support when the silence becomes too heavy.</em></p>
+                        </div>
+                    </div>
+                    
+                    <!-- Section 2 -->
+                    <div class="content-section" data-aos="fade-up" data-aos-delay="100">
+                        <h2 class="section-title" id="section-2">2. What does AI in mental health look like?</h2>
+                        
+                        <div class="mb-8">
+                            <img src="assets/images/img8.jpg" alt="AI Applications in Mental Health" class="w-full max-w-3xl mx-auto rounded-xl shadow-lg mb-6" loading="lazy" />
+                        </div>
+                        
+                        <p>AI isn't one monolithic technology; it covers a variety of approaches and use-cases in mental health. Here are some of the main ones:</p>
+                        
+                        <h3 class="subsection-title">2.1. Chatbots and conversational agents</h3>
+                        <div class="mb-6">
+                            <img src="assets/images/img9.jpg" alt="AI Chatbot for Mental Health Support" class="w-full max-w-xl mx-auto rounded-lg shadow-md mb-4" loading="lazy" />
+                        </div>
+                        <div class="highlight-box">
+                            <p><em>The goal isn't to create emotionless robots, but emotionally aware systems — ones that listen, comfort, and help individuals rediscover calm amid chaos.</em></p>
+                        </div>
+                        <p>These are AI systems (often based on natural language processing) that engage users via text or speech, offering support, guidance, mood tracking, or cognitive-behavioural-therapy (CBT) style interactions. For instance, mobile apps embed chatbots for on-demand emotional support.</p>
+                        <p>Serenity uses conversational AI not just to "respond," but to listen. It adapts tone and language to the user's emotional state, bringing an element of warmth and mindfulness — something often missing in traditional AI tools.</p>
+                        
+                        <h3 class="subsection-title">2.2. Diagnosis, risk detection & monitoring</h3>
+                        <p>AI can ingest large datasets — which may include medical records, speech patterns, social-media activity, voice and facial cues — and attempt to predict or flag mental-health issues such as depression, anxiety, or risk of relapse.</p>
+                        
+                        <h3 class="subsection-title">2.3. Personalized treatment planning</h3>
+                        <p>Rather than "one size fits all", AI models can help tailor interventions to individuals: for example, proposing certain therapy approaches, monitoring progress, adapting to responses, etc.</p>
+                        
+                        <h3 class="subsection-title">2.4. Accessibility & scalability</h3>
                         <p>Because many of these tools run digitally (apps, web, VR/AR), they have the potential to scale more easily, be available 24/7, and reduce barriers like time, cost, or location.</p>
                         
                         <h3 class="subsection-title">2.5. Administrative & workflow support</h3>
