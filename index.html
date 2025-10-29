@@ -209,11 +209,11 @@
                 </p>
                 
                 <div class="flex flex-col sm:flex-row gap-4 justify-center items-center" data-aos="fade-up" data-aos-delay="400">
-                    <a href="#content" class="btn-primary group">
+                    <a href="#content" class="btn-primary button-ripple group">
                         Read the Article
                         <i class="fas fa-arrow-down ml-2 group-hover:translate-y-1 transition-transform"></i>
                     </a>
-                    <a href="#about" class="btn-secondary">
+                    <a href="#about" class="btn-secondary button-ripple glass-effect">
                         Learn More
                     </a>
                 </div>
@@ -221,17 +221,20 @@
         </div>
         
         <!-- Scroll Indicator -->
-        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div class="scroll-indicator">
             <i class="fas fa-chevron-down text-primary-500 text-2xl"></i>
         </div>
     </section>
+    
+    <!-- Decorative Divider -->
+    <div class="decorative-divider"></div>
     
     <!-- About Section -->
     <section id="about" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16" data-aos="fade-up">
                 <h2 class="text-3xl md:text-5xl font-serif font-bold text-gray-900 mb-6">
-                    The Future of Mental <span class="text-primary-600">Wellness</span>
+                    The Future of Mental <span class="gradient-text">Wellness</span>
                 </h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
                     Discover how AI technologies are bridging the gap between traditional mental health care and innovative digital solutions.
@@ -239,33 +242,33 @@
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="mb-4">
+                <div class="feature-card enhanced-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-4 image-zoom-hover">
                         <img src="assets/images/img2.jpg" alt="AI Brain Illustration" class="w-full h-48 object-cover rounded-xl mb-4" loading="lazy" />
                     </div>
-                    <div class="feature-icon bg-primary-100 text-primary-600">
+                    <div class="feature-icon bg-primary-100 text-primary-600 pulse-glow">
                         <i class="fas fa-brain"></i>
                     </div>
                     <h3 class="text-xl font-semibold text-gray-900 mb-3">Intelligent Support</h3>
                     <p class="text-gray-600">AI-powered chatbots and conversational agents provide 24/7 emotional support and guidance.</p>
                 </div>
                 
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="mb-4">
+                <div class="feature-card enhanced-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="mb-4 image-zoom-hover">
                         <img src="assets/images/img3.jpg" alt="Data Analytics for Mental Health" class="w-full h-48 object-cover rounded-xl mb-4" loading="lazy" />
                     </div>
-                    <div class="feature-icon bg-accent-100 text-accent-600">
+                    <div class="feature-icon bg-accent-100 text-accent-600 pulse-glow">
                         <i class="fas fa-chart-line"></i>
                     </div>
                     <h3 class="text-xl font-semibold text-gray-900 mb-3">Early Detection</h3>
                     <p class="text-gray-600">Advanced algorithms help identify mental health risks before they become critical.</p>
                 </div>
                 
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="mb-4">
+                <div class="feature-card enhanced-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="mb-4 image-zoom-hover">
                         <img src="assets/images/img4.jpg" alt="Accessible Mental Health Care" class="w-full h-48 object-cover rounded-xl mb-4" loading="lazy" />
                     </div>
-                    <div class="feature-icon bg-green-100 text-green-600">
+                    <div class="feature-icon bg-green-100 text-green-600 pulse-glow">
                         <i class="fas fa-users"></i>
                     </div>
                     <h3 class="text-xl font-semibold text-gray-900 mb-3">Accessible Care</h3>
@@ -291,31 +294,33 @@
                             </h1>
                             
                             <!-- Author Information -->
-                            <div class="author-info mb-8 p-6 bg-gradient-to-r from-primary-50 to-accent-50 rounded-xl border border-primary-100">
+                            <div class="author-info mb-8 p-6 bg-gradient-to-r from-primary-50 to-accent-50 rounded-xl border border-primary-100 author-gradient-border">
                                 <div class="flex flex-col md:flex-row items-center gap-6">
-                                    <div class="author-avatar">
+                                    <div class="author-avatar pulse-glow">
                                         <img src="assets/images/img6.jpg" alt="Shashwat Ranjan" class="w-20 h-20 rounded-full object-cover border-4 border-white shadow-lg" loading="lazy" />
                                     </div>
                                     <div class="author-details text-center md:text-left">
                                         <h3 class="text-xl font-bold text-gray-900 mb-2">Shashwat Ranjan</h3>
-                                        <p class="text-gray-600 mb-3">Passionate Software Developer</p>
+                                        <p class="text-gray-600 mb-3">
+                                            <span class="professional-badge">Passionate Software Developer</span>
+                                        </p>
                                         <p class="text-sm text-gray-500 mb-3 max-w-2xl">
                                             Third-year B.Tech Computer Science student at Bennett University, specializing in full-stack development, data science, and innovative technology solutions. Passionate about creating impactful digital experiences and exploring the intersection of artificial intelligence and mental wellness.
                                         </p>
                                         <div class="flex justify-center md:justify-start space-x-3">
-                                            <a href="https://www.linkedin.com/in/shashwat-ranjan-16261b390/" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 transition-colors">
+                                            <a href="https://www.linkedin.com/in/shashwat-ranjan-16261b390/" target="_blank" rel="noopener noreferrer" class="social-icon text-primary-600 hover:text-primary-700 transition-colors" data-tooltip="Connect on LinkedIn">
                                                 <i class="fab fa-linkedin-in text-lg"></i>
                                             </a>
-                                            <a href="https://x.com/Shashwat0202" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 transition-colors">
+                                            <a href="https://x.com/Shashwat0202" target="_blank" rel="noopener noreferrer" class="social-icon text-primary-600 hover:text-primary-700 transition-colors" data-tooltip="Follow on Twitter">
                                                 <i class="fab fa-twitter text-lg"></i>
                                             </a>
-                                            <a href="https://www.instagram.com/shashwat0202" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 transition-colors">
+                                            <a href="https://www.instagram.com/shashwat0202" target="_blank" rel="noopener noreferrer" class="social-icon text-primary-600 hover:text-primary-700 transition-colors" data-tooltip="Follow on Instagram">
                                                 <i class="fab fa-instagram text-lg"></i>
                                             </a>
-                                            <a href="https://github.com/SHASHWAT0202" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 transition-colors">
+                                            <a href="https://github.com/SHASHWAT0202" target="_blank" rel="noopener noreferrer" class="social-icon text-primary-600 hover:text-primary-700 transition-colors" data-tooltip="View GitHub">
                                                 <i class="fab fa-github text-lg"></i>
                                             </a>
-                                            <a href="https://linktr.ee/Shashwat0202" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 transition-colors">
+                                            <a href="https://linktr.ee/Shashwat0202" target="_blank" rel="noopener noreferrer" class="social-icon text-primary-600 hover:text-primary-700 transition-colors" data-tooltip="All Links">
                                                 <i class="fas fa-link text-lg"></i>
                                             </a>
                                         </div>
@@ -374,7 +379,7 @@
                         
                         <h3 class="subsection-title">2.1. Chatbots and conversational agents</h3>
                         <div class="mb-6">
-                            <img src="assets/images/img9.jpg" alt="AI Chatbot for Mental Health Support" class="w-full max-w-xl mx-auto rounded-lg shadow-md mb-4" loading="lazy" />
+                            <img src="assets/images/img9.png" alt="AI Chatbot for Mental Health Support" class="w-full max-w-xl mx-auto rounded-lg shadow-md mb-4" loading="lazy" />
                         </div>
                         <div class="highlight-box">
                             <p><em>The goal isn't to create emotionless robots, but emotionally aware systems — ones that listen, comfort, and help individuals rediscover calm amid chaos.</em></p>
@@ -656,25 +661,27 @@
                     </div>
                     
                     <!-- Author Card -->
-                    <div class="bg-gradient-to-br from-primary-50 to-accent-50 rounded-2xl shadow-lg p-6" data-aos="fade-left" data-aos-delay="100">
+                    <div class="bg-gradient-to-br from-primary-50 to-accent-50 rounded-2xl shadow-lg p-6 author-gradient-border" data-aos="fade-left" data-aos-delay="100">
                         <div class="text-center">
-                            <img src="assets/images/img6.jpg" alt="Shashwat Ranjan" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-white shadow-lg" loading="lazy" />
+                            <img src="assets/images/img6.jpg" alt="Shashwat Ranjan" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-white shadow-lg pulse-glow" loading="lazy" />
                             <h4 class="text-lg font-bold text-gray-900 mb-2">Shashwat Ranjan</h4>
-                            <p class="text-sm text-gray-600 mb-4">Software Developer & CS Student</p>
+                            <p class="text-sm text-gray-600 mb-4">
+                                <span class="professional-badge">Software Developer & CS Student</span>
+                            </p>
                             <div class="flex justify-center space-x-3 mb-4">
-                                <a href="https://www.linkedin.com/in/shashwat-ranjan-16261b390/" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 transition-colors">
+                                <a href="https://www.linkedin.com/in/shashwat-ranjan-16261b390/" target="_blank" rel="noopener noreferrer" class="social-icon text-primary-600 hover:text-primary-700 transition-colors" data-tooltip="Connect on LinkedIn">
                                     <i class="fab fa-linkedin-in text-lg"></i>
                                 </a>
-                                <a href="https://x.com/Shashwat0202" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 transition-colors">
+                                <a href="https://x.com/Shashwat0202" target="_blank" rel="noopener noreferrer" class="social-icon text-primary-600 hover:text-primary-700 transition-colors" data-tooltip="Follow on Twitter">
                                     <i class="fab fa-twitter text-lg"></i>
                                 </a>
-                                <a href="https://www.instagram.com/shashwat0202" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 transition-colors">
+                                <a href="https://www.instagram.com/shashwat0202" target="_blank" rel="noopener noreferrer" class="social-icon text-primary-600 hover:text-primary-700 transition-colors" data-tooltip="Follow on Instagram">
                                     <i class="fab fa-instagram text-lg"></i>
                                 </a>
-                                <a href="https://github.com/SHASHWAT0202" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 transition-colors">
+                                <a href="https://github.com/SHASHWAT0202" target="_blank" rel="noopener noreferrer" class="social-icon text-primary-600 hover:text-primary-700 transition-colors" data-tooltip="View GitHub">
                                     <i class="fab fa-github text-lg"></i>
                                 </a>
-                                <a href="https://linktr.ee/Shashwat0202" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 transition-colors">
+                                <a href="https://linktr.ee/Shashwat0202" target="_blank" rel="noopener noreferrer" class="social-icon text-primary-600 hover:text-primary-700 transition-colors" data-tooltip="All Links">
                                     <i class="fas fa-link text-lg"></i>
                                 </a>
                             </div>
@@ -801,19 +808,19 @@
                         Exploring the intersection of artificial intelligence and mental health to create a better tomorrow for wellness and care. Written by Shashwat Ranjan, a passionate software developer and Computer Science student at Bennett University.
                     </p>
                     <div class="flex space-x-4">
-                        <a href="https://x.com/Shashwat0202" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">
+                        <a href="https://x.com/Shashwat0202" target="_blank" rel="noopener noreferrer" class="social-icon text-gray-400 hover:text-white transition-colors" data-tooltip="Follow on Twitter">
                             <i class="fab fa-twitter text-xl"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/shashwat-ranjan-16261b390/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">
+                        <a href="https://www.linkedin.com/in/shashwat-ranjan-16261b390/" target="_blank" rel="noopener noreferrer" class="social-icon text-gray-400 hover:text-white transition-colors" data-tooltip="Connect on LinkedIn">
                             <i class="fab fa-linkedin-in text-xl"></i>
                         </a>
-                        <a href="https://github.com/SHASHWAT0202" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">
+                        <a href="https://github.com/SHASHWAT0202" target="_blank" rel="noopener noreferrer" class="social-icon text-gray-400 hover:text-white transition-colors" data-tooltip="View GitHub Profile">
                             <i class="fab fa-github text-xl"></i>
                         </a>
-                        <a href="https://www.instagram.com/shashwat0202" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">
+                        <a href="https://www.instagram.com/shashwat0202" target="_blank" rel="noopener noreferrer" class="social-icon text-gray-400 hover:text-white transition-colors" data-tooltip="Follow on Instagram">
                             <i class="fab fa-instagram text-xl"></i>
                         </a>
-                        <a href="https://linktr.ee/Shashwat0202" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">
+                        <a href="https://linktr.ee/Shashwat0202" target="_blank" rel="noopener noreferrer" class="social-icon text-gray-400 hover:text-white transition-colors" data-tooltip="All Links">
                             <i class="fas fa-link text-xl"></i>
                         </a>
                     </div>
