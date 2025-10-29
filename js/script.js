@@ -69,8 +69,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Smooth scrolling for navigation links
-    const navLinks = document.querySelectorAll('a[href^="#"]');
+    // Smooth scrolling for navigation links (only internal anchor links)
+    const navLinks = document.querySelectorAll('a[href^="#"]:not([href="#"])');
     
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
@@ -226,16 +226,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.addEventListener('scroll', updateReadingProgress);
 
-    // Social share functionality
+    // Social share functionality (only for share buttons with .share-btn class, not profile links)
     function initSocialShare() {
-        const socialLinks = document.querySelectorAll('.social-icon');
+        const shareButtons = document.querySelectorAll('a.share-btn, button.share-btn');
         const currentUrl = window.location.href;
         const title = document.title;
 
-        socialLinks.forEach(link => {
-            const platform = link.querySelector('i').className;
+        shareButtons.forEach(button => {
+            // Only handle elements that actually have the share-btn class
+            if (!button.classList.contains('share-btn')) return;
             
-            link.addEventListener('click', function(e) {
+            const icon = button.querySelector('i');
+            if (!icon) return;
+            
+            const platform = icon.className;
+            
+            button.addEventListener('click', function(e) {
                 e.preventDefault();
                 
                 let shareUrl = '';
