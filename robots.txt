@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://your-domain.vercel.app/sitemap.xml
+Sitemap: https://aiinmh.vercel.app/sitemap.xml
 
 # Optimize crawling
 Crawl-delay: 1
